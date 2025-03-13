@@ -164,15 +164,18 @@ function App() {
   ];
 
   return (
-    <>
-      <h2 className="text-2xl text-center text-red-500 font-black underline">
+    <div className="px-[50px] py-[30px]">
+      <h2 className="text-2xl text-center text-red-500 font-black  mb-[30px]">
         Users
       </h2>
 
       <div className="">
         {users.map((user) => {
           return (
-            <div className="border">
+            <div className="border p-[20px] mb-[20px]">
+              <p>
+                <span className="font-black">#:</span> {user.id}
+              </p>
               <p>
                 <span className="font-black">Name:</span> {user.name}
               </p>
@@ -192,12 +195,17 @@ function App() {
               <p>
                 <span className="font-black">Websiti:</span> {user.website}
               </p>
+              <p>
+                <span className="font-black">Company:</span> {user.company.name}
+              </p>
+              <p>
+                <span className="font-black">Company-catchPhrase:</span> {user.company.catchPhrase}
+              </p>
             </div>
           );
         })}
-        ;
       </div>
-    </>
+    </div>
   );
 }
 
