@@ -187,7 +187,7 @@ function App() {
               </p>
               <p>
                 <span className="font-black">Address:</span>{" "}
-                {user.address.street}, {user.address.city}, {user.address.suite}
+                {user.address.street}, {user.address.city}, {user.address.suite}, {user.address.zipcode}
               </p>
               <p>
                 <span className="font-black">Phone:</span> {user.phone}
